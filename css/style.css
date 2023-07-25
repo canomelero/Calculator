@@ -1,3 +1,97 @@
 * {
-    background-color: #b5b5b5;
+    background-color: #c7c6c6;
+    margin: 0;
+}
+
+
+/* ####### HEADER ####### */
+header {
+    height: auto;
+    width: 100%;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header h1 {
+    margin-top: 30px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #DB7093;
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 50%;
+}
+
+
+/* ###### CALCULADORA ####### */
+main {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 80vh;
+}
+
+#calculadora {
+    border: 3px solid black;
+    width: 19%;
+    height: auto;
+    padding: 5px;
+    background-color: white;
+}
+
+.pantalla {
+    width: 98%;
+    height: 6vh;
+    background-color: rgb(80, 77, 77);
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.botones-1 {
+    width: 98%;
+    height: 6vh;
+    border: 3px solid black;
+    margin-top: 3px;
+    background-color: white;
+}
+
+.parte-inferior {
+    width: 99.5%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+.numeros {
+    display: block;
+    float: left;
+    width: 73%;
+    background-color: white;
+}
+
+.botones-2 {
+    width: 95%;
+    height: 6vh;
+    border: 3px solid black;
+    margin-top: 3px;
+    background-color: white;
+}
+
+.resolver {
+    width: 25%;
+    height: 20vh;
+    border: 3px solid black;
+    margin-top: 3px;
+    display: block;
+    float: right;
+    background-color: white;
 }
