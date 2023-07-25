@@ -40,15 +40,16 @@ main {
 
 #calculadora {
     border: 3px solid black;
+    border-radius: 2%;
     width: 19%;
     height: auto;
-    padding: 5px;
+    padding: 15px;
     background-color: white;
 }
 
 .pantalla {
     width: 98%;
-    height: 6vh;
+    height: 12vh;
     background-color: rgb(80, 77, 77);
     border: 3px solid black;
     border-radius: 10px;
@@ -58,7 +59,7 @@ main {
     width: 98%;
     height: 6vh;
     border: 3px solid black;
-    margin-top: 3px;
+    margin-top: 7px;
     background-color: white;
 }
 
@@ -82,15 +83,15 @@ main {
     width: 95%;
     height: 6vh;
     border: 3px solid black;
-    margin-top: 3px;
+    margin-top: 7px;
     background-color: white;
 }
 
 .resolver {
     width: 25%;
-    height: 20vh;
+    height: 21vh;
     border: 3px solid black;
-    margin-top: 3px;
+    margin-top: 7px;
     display: block;
     float: right;
     background-color: white;
