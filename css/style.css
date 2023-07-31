@@ -49,12 +49,33 @@ main {
 
 .pantalla {
     width: 98%;
-    height: 10vh;
-    background-color: rgb(80, 77, 77);
+    min-height: 10vh;
+    background-color: rgb(99, 95, 95);
+    padding: 5px;
     border: 3px solid black;
     border-radius: 10px;
     margin-bottom: 30px;
     margin-top: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.num-pantalla {
+    font-family: monospace;
+    font-size: 30px;
+    color: white;
+    max-width: 90%;
+    margin: 0px 5px 0px 10px;
+    height: auto;
+
+    /*Con esta propiedad se consigue que el contenido del parráfo no se salga del div y no haya desbordamiento*/
+    overflow-wrap: break-word;  
+}
+
+.num-pantalla p {
+    background-color: rgb(99, 95, 95);
 }
 
 .botones-1 {
@@ -126,6 +147,7 @@ main {
 }
 
 .resolver .boton {
-    height: 93.8%;
+    height: 99%;
+    width: 100%;
     border-radius: 7%;
 }

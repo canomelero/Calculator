@@ -4,108 +4,62 @@
         <link rel="stylesheet" href="css/style.css">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Calculator</title>
+        <title>Calculadora</title>
     </head>
 
     <body>
         <header>
-            <h1>Calculadora Básica</h1>
+            <h1>Calculadora</h1>
         </header>
 
         <main>
             <section id="calculadora">
                 <div class="pantalla">
-                    <tbody></tbody>
+                    <div class="num-pantalla"></div>
                 </div>
     
                 <div class="botones-1">
-                    <div class="boton">
-                        <p>+</p>
-                    </div>
-
-                    <div class="boton">
-                        <p>-</p>
-                    </div>
-
-                    <div class="boton">
-                        <p>x</p>
-                    </div>
-
-                    <div class="boton">
-                        <p>/</p>
-                    </div>
+                    <input type="button" class="boton" id="suma" value="+"/>
+                    <input type="button" class="boton" id="resta" value="-"/>
+                    <input type="button" class="boton" id="multiplicacion" value="x"/>
+                    <input type="button" class="boton" id="division" value="/"/>
                 </div>
     
                 <div class="botones-1">
-                    <div class="boton">
-                        <p>7</p>
-                    </div>
-
-                    <div class="boton">
-                        <p>8</p>
-                    </div>
-
-                    <div class="boton">
-                        <p>9</p>
-                    </div>
-
-                    <div class="boton">
-                        <p>%</p>
-                    </div>
+                    <input type="button" class="boton" id="num7" value="7"/>
+                    <input type="button" class="boton" id="num8" value="8"/>
+                    <input type="button" class="boton" id="num9" value="9"/>
+                    <input type="button" class="boton" id="modulo" value="%"/>
                 </div>
                 
                 <div class="parte-inferior">
                     <div class="numeros">
                         <div class="botones-2">
-                            <div class="boton">
-                                <p>4</p>
-                            </div>
-        
-                            <div class="boton">
-                                <p>5</p>
-                            </div>
-        
-                            <div class="boton">
-                                <p>6</p>
-                            </div>
+                            <input type="button" class="boton" id="num4" value="4"/>
+                            <input type="button" class="boton" id="num5" value="5"/>
+                            <input type="button" class="boton" id="num6" value="6"/>
                         </div>
             
                         <div class="botones-2">
-                            <div class="boton">
-                                <p>1</p>
-                            </div>
-        
-                            <div class="boton">
-                                <p>2</p>
-                            </div>
-        
-                            <div class="boton">
-                                <p>3</p>
-                            </div>
+                            <input type="button" class="boton" id="num1" value="1"/>
+                            <input type="button" class="boton" id="num2" value="2"/>
+                            <input type="button" class="boton" id="num3" value="3"/>
                         </div>
             
                         <div class="botones-2">
-                            <div class="boton">
-                                <p>0</p>
-                            </div>
-        
-                            <div class="boton">
-                                <p>.</p>
-                            </div>
-        
-                            <div class="boton">
-                                <p>C</p>
-                            </div>
+                            <input type="button" class="boton" id="num0" value="0"/>
+                            <input type="button" class="boton" id="punto" value="."/>
+                            <input type="button" class="boton" id="borrar" value="C"/>
                         </div>
                     </div>
                     
                     <div class="resolver">
-                        <div class="boton">
-                            <p>=</p>
-                        </div>
+                        <input type="button" class="boton" id="resolver" value="="/>
                     </div>
                 </div>
             </section>  
         </main>
+
+        <script src="js/main.js"></script>
     </body>
 </html>
