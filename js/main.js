@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
 
     const pantalla = document.querySelector(".num-pantalla");
-    let cadena = "";
-    let num_int = 0;
+    let cadena = "";    // numero que se va a ir imprimiendo en la pantalla de la calculadora
+    let numero = "";    // numero que se verá desde la consola del navegador
     const arrayBotones = [];
 
     // Se añaden los operadores
@@ -37,20 +37,28 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // #### Funciones ####
     function cargarValor(evento) {
-        const boton = evento.target.value;
+        let boton = evento.target.value;
     
-        if(boton !== "=" && boton !== "C") {
+        if(boton !== "=" && boton !== "C") { 
             cadena += boton;
-            agregarPantalla(cadena);
+
+            if(boton === "x") {
+                boton = "*";
+            }
+
+            numero += boton;
+            imprimirDatos(numero, cadena);
         }
         else if(boton === "=") {
-            let resultado = eval(cadena);
+            let resultado = eval(numero);
             cadena = resultado;
-            agregarPantalla(resultado);
+            imprimirDatos(resultado, cadena);
         }
-
-        console.log(num_int);
-        // console.log(cadena);
+        else if(boton === "C") {
+            numero = "";
+            cadena = "";
+            imprimirDatos(numero, cadena);
+        } 
     }
 
     function agregarPantalla(numero) {
@@ -62,6 +70,11 @@ document.addEventListener("DOMContentLoaded", () => {
         `;
       
         pantalla.appendChild(row);
+    }
+
+    function imprimirDatos(numero, string) {
+        agregarPantalla(string);
+        console.log(numero);
     }
 
     function limpiarPantalla() {
