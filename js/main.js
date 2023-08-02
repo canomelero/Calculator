@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const pantalla = document.querySelector(".num-pantalla");
     let cadena = "";      // numero que se va a ir imprimiendo en la pantalla de la calculadora
     let numero = "";      // numero que se verá desde la consola del navegador
-    let cont_punto = 0;   // variale para controlar que el número tenga máximo "un punto"
+    let cont_punto = 0;   // variable para controlar que el número tenga máximo "un punto"
     const arrayBotones = [];
 
     // Se añaden los operadores

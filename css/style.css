@@ -39,20 +39,20 @@ main {
 }
 
 #calculadora {
-    border: 3px solid black;
+    border: 2px solid black;
     border-radius: 2%;
     width: 17%;
     height: auto;
     padding: 25px;
-    background-color: rgb(241, 223, 190);
+    background-color: rgb(242, 230, 209);
 }
 
 .pantalla {
     width: 98%;
     min-height: 10vh;
-    background-color: rgb(99, 95, 95);
+    background-color: rgb(151, 143, 143);
     padding: 5px;
-    border: 3px solid black;
+    border: 2px solid black;
     border-radius: 10px;
     margin-bottom: 30px;
     margin-top: 10px;
@@ -75,14 +75,14 @@ main {
 }
 
 .num-pantalla p {
-    background-color: rgb(99, 95, 95);
+    background-color: rgb(151, 143, 143);
 }
 
 .botones-1 {
     width: 99.5%;
     height: 6vh;
     margin-top: 10px;
-    background-color: rgb(241, 223, 190);
+    background-color: rgb(242, 230, 209);
 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -90,7 +90,7 @@ main {
 }
 
 .boton{
-    border: 3px solid black;
+    border: 1px solid black;
     border-radius: 10%;
     font-size: 30px;
     font-family: monospace;
@@ -99,6 +99,7 @@ main {
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
+    background-color: rgb(244, 230, 230);
 }
 
 .boton:hover {
@@ -113,14 +114,14 @@ main {
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(241, 223, 190);
+    background-color: rgb(242, 230, 209);
 }
 
 .numeros {
     display: block;
     float: left;
     width: 73%;
-    background-color: rgb(241, 223, 190);
+    background-color: rgb(242, 230, 209);
 }
 
 .numeros :first-child {
@@ -131,7 +132,7 @@ main {
     width: 102.7%;
     height: 6vh;
     margin-top: 7px;
-    background-color: rgb(241, 223, 190);
+    background-color: rgb(242, 230, 209);
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
